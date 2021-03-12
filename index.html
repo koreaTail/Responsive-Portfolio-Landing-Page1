@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Portfolio Landing Page</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css"
+    />
+  </head>
+  <body>
+    <section class="banner" id="sec">
+      <header>
+        <a href="#" class="logo">Logo</a>
+        <div id="toggle" onclick="toggle()"></div>
+      </header>
+      <div class="content">
+        <h2>hello, Jun<br /></h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique
+          quibusdam aliquam, quia sapiente perferendis fugit unde exercitationem
+          itaque excepturi nesciunt minima earum aperiam mollitia nemo sed
+          dignissimos odit laudantium assumenda.
+        </p>
+        <a href="#">Know More</a>
+      </div>
+      <ul class="sci">
+        <li>
+          <a href="#"><i class="fab fa-apple fa-2x"></i></a>
+        </li>
+        <li>
+          <a href="#"><i class="fas fa-church fa-2x"></i></a>
+        </li>
+        <li>
+          <a href="#"><i class="fas fa-guitar fa-2x"></i></a>
+        </li>
+      </ul>
+    </section>
+    <div id="navigation">
+      <ul>
+        <li><a href="#">tail</a></li>
+        <li><a href="#">red-tea</a></li>
+        <li><a href="#">r-oun</a></li>
+        <li><a href="#">u-jin</a></li>
+        <li><a href="#">not-yet</a></li>
+      </ul>
+    </div>
+  </body>
+  <script>
+    function toggle() {
+      var sec = document.getElementById("sec");
+      var nav = document.getElementById("navigation");
+      sec.classList.toggle("active");
+      nav.classList.toggle("active");
+    }
+  </script>
+</html>
